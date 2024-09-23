@@ -17,13 +17,7 @@ int main()
     cin >> R;
 
     // Перевірка, чи знаходиться точка в квадраті
-    bool inSquare = (x >= -R && x <= R && y >= -R && y <= R);
-
-    bool inCircle1 = (x + R) * (x + R) + (y - R) * (y - R) <= R * R;
-    bool inCircle2 = (x - R) * (x - R) + (y + R) * (y + R) <= R * R;
-
-    // Якщо точка знаходиться в квадраті або в одній з окружностей
-    if (inSquare || inCircle1 || inCircle2)
+    if ((x >= -R && x <= R && y >= -R && y <= R) || ((x + R) * (x + R) + (y - R) * (y - R) <= R * R) || (x - R) * (x - R) + (y + R) * (y + R) <= R * R)
     {
         cout << "yes" << endl;
     }
@@ -31,6 +25,7 @@ int main()
     {
         cout << "no" << endl;
     }
+    cin.get();
 
     return 0;
 }
