@@ -14,10 +14,10 @@ int main()
     cin >> dx;
 
     cout << fixed;
-    cout << "---------------------------" << endl;
-    cout << "|" << setw(5) << "x" << "    |"
-         << setw(7) << "F" << "        |" << endl;
-    cout << "---------------------------" << endl;
+    cout << "-----------------------" << endl;
+    cout << "|" << setw(5) << "x" << "      |"
+         << setw(7) << "F" << "  |" << endl;
+    cout << "-----------------------" << endl;
 
     x = xp;
     while (x <= xk)
@@ -29,12 +29,12 @@ int main()
         else
             F = a * (x + c);
 
-        cout << "|" << setw(7) << setprecision(2) << x
-             << "   |" << setw(10) << setprecision(3) << F
-             << "   |" << endl;
+        cout << "|" << setw(10) << setprecision(1) << x
+             << " |" << setw(8) << setprecision(1) << F
+             << " |" << endl;
         x += dx;
     }
-    cout << "---------------------------" << endl;
+    cout << "-----------------------" << endl;
 
     return 0;
 }

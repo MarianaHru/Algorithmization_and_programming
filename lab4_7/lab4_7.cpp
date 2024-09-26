@@ -18,13 +18,13 @@ int main()
     cin >> eps;
 
     cout << fixed;
-    cout << "-------------------------------------------------" << endl;
-    cout << "|" << setw(5) << "x" << "  | "
-         << setw(10) << " exp(x) " << "| "
-         << setw(7) << "S" << "        |"
+    cout << "------------------------------------------" << endl;
+    cout << "|" << setw(7) << "x" << "  | "
+         << setw(11) << " exp(x) " << "| "
+         << setw(1) << "S" << "        |"
          << setw(5) << " n " << " | "
          << endl;
-    cout << "-------------------------------------------------" << endl;
+    cout << "------------------------------------------" << endl;
 
     x = xp;
     while (x <= xk)
@@ -40,13 +40,13 @@ int main()
             S += a;
         } while (abs(a) >= eps);
 
-        cout << "|" << setw(7) << setprecision(2) << x << " |"
-             << setw(10) << setprecision(5) << exp(x) << " |"
-             << setw(10) << setprecision(5) << S << " |"
+        cout << "|" << setw(8) << setprecision(2) << x << " |"
+             << setw(10) << setprecision(5) << exp(x * x) << "  |"
+             << setw(10) << setprecision(5) << S << "|"
              << setw(5) << n << " |"
              << endl;
         x += dx;
     }
-    cout << "-------------------------------------------------" << endl;
+    cout << "------------------------------------------" << endl;
     return 0;
 }

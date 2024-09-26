@@ -4,10 +4,9 @@
 using namespace std;
 int main()
 {
-    int l, N, i;
+    int l = 1, N, i;
     double S;
-    cout << "l = ";
-    cin >> l;
+
     cout << "N = ";
     cin >> N;
     S = 0;

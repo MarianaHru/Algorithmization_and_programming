@@ -31,7 +31,7 @@ int main()
 
         cout << "|" << setw(7) << setprecision(2) << x
              << "   |" << setw(10) << setprecision(3) << y
-             << "   |" << endl;
+             << "    |" << endl;
         x += dx;
     }
     cout << "---------------------------" << endl;
