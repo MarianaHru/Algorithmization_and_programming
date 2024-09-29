@@ -21,7 +21,9 @@ int main()
     x = xp;
     while (x <= xk)
     {
-        if ((x >= -R && x <= R && y >= -R && y <= R) || ((x + R) * (x + R) + (y - R) * (y - R) <= R * R) || (x - R) * (x - R) + (y + R) * (y + R) <= R * R)
+        if ((x >= -R && x <= R && y >= -R && y <= R) &&
+            ((y - R) * (y - R)) >= R * R - (x + R) * (x + R) &&
+            ((y + R) * (y - R)) >= R * R - (x - R) * (x - R))
 
         {
             cout << "yes" << endl;
