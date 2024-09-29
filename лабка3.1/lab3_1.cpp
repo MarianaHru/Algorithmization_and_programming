@@ -19,7 +19,7 @@ int main()
     if (x < 0)
         B = 1 + 4 * (x * x);
     if (0 <= x && x <= 2)
-        B = (exp(x) + abs(x) * exp(x) + abs(x));
+        B = ((exp(x) + abs(x)) * (exp(x) + abs(x)));
     if (x > 2)
         B = 5 * sin((x * x) + 1);
     y = A + B;
@@ -31,7 +31,7 @@ int main()
     else if (x > 2)
         B = 5 * sin((x * x) + 1);
     else
-        B = (exp(x) + abs(x) * exp(x) + abs(x));
+        B = ((exp(x) + abs(x)) * (exp(x) + abs(x)));
     y = A + B;
     cout << "2) y = " << y << endl;
     cin.get();

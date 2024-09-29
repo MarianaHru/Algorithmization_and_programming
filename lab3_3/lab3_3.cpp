@@ -6,7 +6,7 @@ int main()
     double x; // вхідний аргумент
     double R; // вхідний параметр
     double y; // результат обчислення виразу
-    const double Pi = 3.141592653589793;
+    const double Pi = 2 * acos(0.0);
 
     cout << "R=";
     cin >> R;
@@ -16,7 +16,7 @@ int main()
     if (x < -7 - R)
         y = R;
     else if (-7 - R <= x && -7 + R > x)
-        y = sqrt((R * R) - (x + 7));
+        y = sqrt((R * R) - (x + 7) * (x + 7));
     else if (-7 + R <= x && -4 > x)
         y = R;
     else if (-4 <= x && 0 > x)
@@ -24,7 +24,7 @@ int main()
     else if (0 < x && Pi > x)
         y = sin(x);
     else if (Pi <= x)
-        y = 1;
+        y = x - Pi;
     cout << endl;
     cout << "y = " << y << endl;
     cin.get();
